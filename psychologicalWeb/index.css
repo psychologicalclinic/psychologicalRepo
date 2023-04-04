@@ -341,3 +341,34 @@ li a {
 .portfolio-item:hover img{
   transform: scale(1.1);
 }
+/* ------------------------FOOTER--------------------------------------------- */
+
+footer {
+  margin-top: 200px;
+  position: relative;
+  background-color: #7a6ad8;
+  border-radius: 150px 150px 0px 0px;
+ margin-bottom: 2px;
+}
+
+footer p {
+  text-align:center;
+  line-height: 90px;
+  color: #fff;
+  font-weight: 80;
+  font-size: 10px;
+  
+}
+
+footer::before {
+  background: url(images/contact-dec-01.png);
+  position: absolute;
+  left: 30px;
+  transform: rotate(180deg);
+  opacity: 1;
+  bottom: 0;
+  width: 318px;
+  height: 119px;
+  content: '';
+  z-index: 2;
+}
