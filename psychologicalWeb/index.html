@@ -7,6 +7,7 @@
   
     <link href="index.css" rel="stylesheet">
     <link href="javascript.js" rel="stylesheet">
+    <link href="Responsive.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Uzm. Aile ve Evlilik Danışmanı</title>
 </head>
@@ -20,7 +21,7 @@
         <ul class="menu">
             <li ><a href="index.html">Anasayfa</a></li>
             <li ><a href="#" onclick="hakkımda()">Hakkımda</a></li>
-            <li ><a href="#portfolio" onclick="hizmetlerim()">Hizmetler</a></li>
+            <li ><a href="#portfolio" onclick="hizmetlerim()">Hizmetlerim</a></li>
             <li ><a href="randevu.html">Randevu Al</a></li>
             <li ><a href="iletisim.html">İletişim</a></li>
         </ul>  
@@ -47,24 +48,21 @@
       x.style.display = "block";
     }
   }
- 
-  
-
-function changepage() {
-    var x = document.getElementById("page2");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
+ function changepage() {
+  var x = document.getElementById("sayfa2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
   }
+}
       </script>
   <!-- --------------------------HOMEPAGE BÖLÜMÜ BAŞLANGIC-- -------------------------->
       
     
     <div class="resimKapsayici">
         <img class="resim" src="images/bg.jpg">
-        <div id="page1" >
+        <div id="sayfa1" >
         <img class="resim2" src="images/01.jpg" alt="">
         <p class="resimYazisi">MEİRA </p>
            <p class="resimYazisi2">Psikolojik Danışmanlık </p> 
@@ -137,6 +135,7 @@ function changepage() {
  <!-- --------------------------HİZMETLERİM BÖLÜMÜ BAŞLANGIC-- -------------------------->
  <section id="portfolio">
     <div class="about-title"> 
+      <i style="font-size: 40px;" class="fa-solid fa-wand-magic-sparkles"></i>
         <h2>HİZMETLERİM</h2>
     </div> 
     <div class="portfolio">
@@ -214,8 +213,51 @@ function changepage() {
 </section>
 
  <!-- ---------------------------------HİZMETLERİM BÖLÜMÜ BİTİŞ-- --------------------------------------------->
+ <!-- --------------------------------------YORUM ALANI BASLANGICI------------------------------------------------- -->
+ <div class="section testimonials">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="owl-carousel owl-testimonials">
+          <div class="item">
+            <p>“Please tell your friends or collegues about TemplateMo website. Anyone can access the website to download free templates. Thank you for visiting.”</p>
+            <div class="author">
+              
+              <span class="category">Full Stack Master</span>
+              <h4>Claude David</h4>
+            </div>
+          </div>
+          <!-- <div class="item">
+            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravid.”</p>
+            <div class="author">
+             
+              <span class="category">UI Expert</span>
+              <h4>Thomas Jefferson</h4>
+            </div>
+          </div>
+          <div class="item">
+            <p>“Scholar is free website template provided by TemplateMo for educational related websites. This CSS layout is based on Bootstrap v5.3.0 framework.”</p>
+            <div class="author">
+              
+              <span class="category">Digital Animator</span>
+              <h4>Stella Blair</h4>
+            </div>
+          </div>
+        </div>
+      </div>-->
+      <div class="col-lg-5 align-self-center">
+        <div class="section-heading">
+          <h6>GÖRÜŞLER</h6>
+          <h2>Bizim Hakkımızda Ne Diyorlar?</h2>
+          <p>You can search free CSS templates on Google using different keywords such as templatemo portfolio, templatemo gallery, templatemo blue color, etc.</p>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+ <!-- --------------------------------------YORUM ALANI BİTİŞİ------------------------------------------------- -->
   <!-- ---------------------------------FOOTER BÖLÜMÜ-------------------------------------------------------- -->
-  <footer>
+
  
  <footer>
   <div class="container">
