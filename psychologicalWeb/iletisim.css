@@ -62,11 +62,13 @@
   
   .contact-us:before {
     position: absolute;
-    top: 0;
+    top: 200px;
     bottom: 0;
-    left: 0;
+    right: 0;
     z-index: -1;
-    background-color: #f1f0fe;
+    width: 100%;
+    height: 85%;
+    background-color: #f1f0fe;;
     content: '';
     border-top-right-radius: 500px;
     border-bottom-right-radius: 500px;
@@ -75,10 +77,13 @@
 
   .contact-us .contact-us-content {
     border-radius: 25px;
-    padding: 80px;
+    padding: 30px;
     background-color: #7a6ad8;
     position: relative;
     z-index: 1;
+    width: 40%;
+    top: 40px;
+    
   }
   
   .contact-us .contact-us-content::before {
@@ -162,4 +167,12 @@
   #contact-form button:hover {
     opacity: 0.8;
   }
-  
+   iframe{
+    position: absolute;
+    right: 400px;
+    top: 250px;
+    width: 30%;
+    height: 65%;
+    padding: 50px;
+    border-radius: 10%;
+   }
