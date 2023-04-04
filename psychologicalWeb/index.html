@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <link href="javascript.js" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- --------------------------HEADER BÖLÜMÜ BAŞLANGIC-- -------------------------->
+    <header class="header"> 
+        <a  class="logo">
+            <h1>MEİRA</h1>
+            <h5> Psikolojik Danışmanlık</h5>
+        </a>
+        <ul class="menu">
+            <li ><a href="index.html">Anasayfa</a></li>
+            <li ><a href="#" onclick="hakkımda()">Hakkımda</a></li>
+            <li ><a href="#portfolio" onclick="hizmetlerim()">Hizmetler</a></li>
+            <li ><a href="iletisim.html">İletişim</a></li>
+        </ul>  
+
+    </header>
+    <script>
+    function hakkımda() {
+        var x = document.getElementById("sayfa2");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
+
+      function hizmetlerim() {
+    var x = document.getElementById("portfolio");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "block";
+    }
+  }
+ 
+  
+
+function changepage() {
+    var x = document.getElementById("page2");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+      </script>
+  
+      
+    
+    <div class="resimKapsayici">
+        <img class="resim" src="images/bg.jpg">
+        <div id="page1" >
+        <img class="resim2" src="images/01.jpg" alt="">
+        <p class="resimYazisi">MEİRA </p>
+           <p class="resimYazisi2">Psikolojik Danışmanlık </p> 
+           <p class="resimYazisi3">Uzm. Aile ve Evlilik Danışmanı </p>
+           <p class="resimYazisi4">KÜBRA BÜYÜK </p> 
+           <a  class="button" href="#">Hızlı Randevu</a>
+        </div>
+<div id="sayfa2">
+           <img class="resim3" src="images/02.jpg" alt="">
+        <p class="resim2Yazisi">BEN KİMİM? </p>
+           <p class="resim2Yazisi2">KÜBRA BÜYÜK KİMDİR?</p> 
+           <p class="resim2Yazisi3">
+            Merhaba, ön lisans eğitimimi Anadolu Üniversitesi Sosyal Hizmetler alanında tamamladım,
+            lisans eğitimimi Ankara Yıldırım Beyazıt Üniversitesi Sosyoloji bölümünde tamamladım. 
+            Şu anda İstanbul Üniversitesinde Çocuk Gelişimi Lisans eğitimine devam etmekteyim.  
+            Gazi Üniversitesi’nde pedagojik formasyon eğitimimi tamamladım. Yüksek Lisans eğitimimi Yıldırım Beyazıt Üniversitesi
+            Sağlık Bilimleri Enstitüsünde tamamlayarak Uzman Aile ve Evlilik Danışmanlığı unvanını aldım. 
+            İlişki Terapileri Enstitüsünde Cebrail Kısadan Cinsel Terapi, Duygu Odaklı Çift Terapisi ve Boşanma Terapisi 
+            eğitimleri aldım. Dr. Nevin Dölekten Kısa Süreli Çözüm Odaklı Terapi ve Kriz, Travma ve Yas Danışmanlığı eğitimlerini aldım.
+            Davranış Bilimleri Enstitüsünde Emre Konuktan EMDR eğitimimi tamamladım, süpervizyon aşamasındayım. 
+            Ev Okulu Derneğinden Çocuk Projektif ve Çocuk Objektif Testleri Eğimi aldım. 
+            Selçuk Üniversitesinden Oyun Terapisi eğitimimi aldım. Yetişkin, Çift ve Çocuk Ergen alanında ilgili birçok eğitime katıldım.
+            Ankara’da yaşamaktayım. Kurucusu olduğum Meira Psikolojik Danışmanlıkta hizmet vermekteyim. </p> 
+            <img id="kubra" src="images/kubra.jpg" alt="">
+            <p class="ailedanısmani">AİLE DANIŞMANI</p>
+        </div>
+        <a id="icon" class="fa-solid fa-arrow-right-arrow-left" onclick="changepage()"></a> 
+        </div>
+
+    <!-----------------------------HEADER BÖLÜMÜ BİTİŞ----------------------------->
+    <!-- --------------------------SERVİCES BÖLÜMÜ BAŞLANGIC-- -------------------------->
+<div class="services section" id="services">
+    <div class="container">
+          <div class="service-item">
+            <div class="icon">
+              <img src="images/service-01.png" alt="online degrees">
+            </div>
+            <div class="main-content">
+              <h4>Randevu Formu</h4>
+              <p>Randevu almak ve detaylı bilgi için formu doldurunuz.</p>
+              <p style="color: #f1f0fe;">Online danışmanlıkta şehirler arası mesafe</p>
+                <a class="button2"  href="#">Read More</a>
+          </div>
+        </div>
+      
+          <div class="service-item">
+            <div class="icon">
+              <img src="images/service-02.png" alt="short courses">
+            </div>
+            <div class="main-content">
+                <h4>Online Terapi</h4>
+                <p>Online danışmanlıkta şehirler arası mesafe ortadan kalkarak, danışanların danışmanlık almak istediği uzman ile 
+                  profesyonel görüşme sağlaması amaçlanır.</p>
+                <a class="button2"  href="#">Read More</a>
+            </div>
+        </div>
+        
+          <div class="service-item">
+            <div class="icon">
+              <img src="images/service-03.png" alt="web experts">
+            </div>
+            <div class="main-content">
+              <h4>İletişim</h4>
+              <p> <br> YDA CENTER, Kızılırmak Mah. Dumlupınar Bulvarı.9/A Blok 8.kat <br> No :305, 06530 Çankaya/Ankara</p>
+              
+                <a  class="button2" href="#">Read More</a>
+              </div>
+            </div>
+ <!----------------------------SERVİCES BÖLÜMÜ BİTİŞ---------------------------->
+ <!-- --------------------------HİZMETLERİM BÖLÜMÜ BAŞLANGIC-- -------------------------->
+ <section id="portfolio">
+    <div class="about-title"> 
+        <h2>HİZMETLERİM</h2>
+    </div> 
+    <div class="portfolio">
+        
+        
+        <div class="portfolio-item ">
+            <img src="images/1.png" alt="">
+            <div class="overlay">
+            <i class="fa-solid fa-laptop"></i>
+            <p>Online Terapi</p>
+            </div>
+        </div>
+        <div class="portfolio-item ">
+            <img src="images/2.png" alt="">
+            <div class="overlay">
+                <i class="fa-solid fa-person"></i>
+                <p>Bireysel Terapi</p>
+               
+            </div>
+        </div>
+        <div class="portfolio-item ">
+            <img src="images/3.png" alt=""> 
+            <div class="overlay">
+                <i class="fa-solid fa-people-roof"></i>
+                <p>Aile Danışmanlığı <br>
+                    Ve Çift Terapisi</p>
+            </div>
+        </div> 
+        <div class="portfolio-item ">
+            <img src="images/4.png" alt="">
+            <div class="overlay">
+                <i class="fa-solid fa-people-arrows"></i>
+                <p>Evlilik Öncesi Terapi</p>
+            </div>
+        </div>
+        <div class="portfolio-item ">
+            <img src="images/5.png" alt="">
+            <div class="overlay">
+                <i class="fa-solid fa-venus-mars"></i>
+                <p>Cinsel Terapi</p>
+            </div>
+        </div>
+        <div class="portfolio-item ">
+            <img src="images/6.png" alt="">
+            <div class="overlay">
+                <i class="fa-solid fa-heart-crack"></i>
+                <p>Boşanma Terapisi</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="images/7.png" alt="">
+            <div class="overlay">
+                <i class="fa-solid fa-glasses"></i>
+                <p>EMDR Terapisi</p>
+            </div>
+        </div>
+        <div class="portfolio-item ">
+            <img src="images/8.png" alt="">
+            <div class="overlay">
+                <i class="fa-solid fa-hands-holding-child"></i>
+                <p>Çocuk Ve Ergen Terapisi</p>
+            </div>
+        </div>
+        <div class="portfolio-item ">
+            <img src="images/9.png" alt="">
+            <div class="overlay">
+                <i class="fa-solid fa-person-breastfeeding"></i>
+                <p>Oyun Terapisi</p>
+            </div>
+        </div>
+        
+        
+    </div>
+
+</section>
+
+ <!-- --------------------------HİZMETLERİM BÖLÜMÜ BİTİŞ-- -------------------------->
+
+</body>
+</html>

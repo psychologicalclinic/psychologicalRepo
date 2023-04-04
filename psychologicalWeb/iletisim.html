@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="iletisim.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <link href="index.html" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header"> 
+        <a  class="logo">
+            <h1>MEİRA</h1>
+            <h5> Psikolojik Danışmanlık</h5>
+        </a>
+        <ul class="menu">
+            <li ><a href="index.html">Anasayfa</a></li>
+            <li ><a href="index.html#sayfa2" onclick="hakkımda()">Hakkımda</a></li>
+            <li ><a href="index.html#portfolio" onclick="hizmetlerim()">Hizmetler</a></li>
+            <li ><a href="iletisim.html">İletişim</a></li>
+        </ul>  
+    </header>
+    <!-- --------------------------------ADRES/TELEFON/MAİL---------------------- -->
+    <div class="services section" id="services">
+        <div class="container">
+              <div class="service-item2">
+                <div class="icon2">
+                  <img src="images/service-01.png" alt="web experts">
+                </div>
+                <div class="main-content2">
+                  <h4>Adres</h4>
+                  <p> <br> YDA CENTER, Kızılırmak Mah. Dumlupınar Bulvarı.9/A Blok 8.kat <br> No :305, 06530 Çankaya/Ankara</p>
+                  </div>
+                </div>
+              <div class="service-item2">
+                <div class="icon2">
+                  <img src="images/service-02.png" alt="short courses">
+                </div>
+                <div class="main-content2">
+                    <h4>Telefon</h4>
+                    <p>0850 474 6276</p> 
+                    <p style="color: #f1f0fe;;"> YDA CENTER, Kızılırmak Mah. Dumlupınar</p>
+                </div>
+            </div>
+            <div class="service-item2">
+                <div class="icon2">
+                  <img src="images/service-03.png" alt="short courses">
+                </div>
+                <div class="main-content2">
+                    <h4>E-Posta</h4>
+                    <p>uzamanailedanismani@kubrabuyuk.com</p>
+                    <p style="color: #f1f0fe;;"> YDA CENTER, Kızılırmak Mah. Dumlupınar</p>
+                </div>
+            </div>
+
+    <!-- -------------------------------İLETİLİM BÖLÜMÜ BAŞLANGICI---------------------------- -->
+<div class="contact-us section" id="contact">
+    <div class="container">
+  
+        <div class="col-lg-6">
+          <div class="contact-us-content">
+            <h6>Her türlü Görüş, Öneri, Şikayet Bildiriminde Bulunabilirsiniz.!</h6>
+            <h2>İletişim Formu</h2>
+            <form id="contact-form" action="" method="post">
+              <div class="row">
+                <div class="col-lg-12">
+                  <fieldset>
+                    <input type="name" name="name" id="name" placeholder="Adınız/Soyadınız" autocomplete="on" required>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Posta Adresiniz" required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                    <fieldset>
+                      <input type="name" name="name" id="name" placeholder="Telefon Numaranız" autocomplete="on" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <input type="name" name="name" id="name" placeholder="Konu" autocomplete="on" required>
+                    </fieldset>
+                  </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <textarea name="message" id="message" placeholder="Mesajınız"></textarea>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="orange-button">Gönder</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
