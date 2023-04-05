@@ -111,7 +111,7 @@
   }
   
   #contact-form input  {
-    width: 100%;
+    width: 90%;
     height: 50px;
     border-radius: 25px;
     background-color: #f0ffeb26;
@@ -131,7 +131,7 @@
   }
 
   #contact-form textarea {
-    width: 100%;
+    width: 90%;
     height: 120px;
     border-radius: 25px;
     background-color:  #f0ffeb26;
