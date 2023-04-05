@@ -249,20 +249,42 @@
 
 
   
+let slideIndex = 1;
+showSlides(slideIndex);
+
+
 function changecomment() {
-   
-    var x = document.getElementById("yorum2").value;
-    alert(x);
-    // if (x.style.display === "none" & y.style.display === "none") {
-    //   x.style.display = "block";
-    // }  else if (y.style.display === "none" & z.style.display === "none"){
-    //   y.style.display = "block";
-    // }
-    // else{
-    //   z.style.display = "block";
-    // }
-  }
+    showSlides(slideIndex += 1);
+}
+
+
+function previousSlide() {
+    showSlides(slideIndex -= 1);  
+}
+
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("item");
     
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+  
+
+    for (let slide of slides) {
+        slide.style.display = "none";
+    }   
+    slides[slideIndex - 1].style.display = "block"; 
+}
 </script>
 
 
