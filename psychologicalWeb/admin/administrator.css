@@ -133,3 +133,18 @@ h5 {
     font-size: 2rem !important;
     color: #332c60 !important;
 }
+
+
+/* #text-center{
+    display: flex;
+    width:70%;
+    max-width:600px;
+} */
+#bar-chart{
+    width: 70%;
+    margin-left: 30px !important;
+}
+#pie-chart{
+    width: 50%;
+    margin-left: 80px !important;
+}
