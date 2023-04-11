@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -184,7 +185,6 @@ var barColors = [
   "#AED581",
   "#DCE775",
 ];
-new Chart("myChart",
 
 
 function cads(id){
@@ -224,21 +224,23 @@ function cads(id){
   if(id==12) {
     var yValues = [10, 15, 25, 50, 20,20,35,35,20 ];
   }
+}
 
+new Chart("myChart",
   {
-  type= "bar",
-  data= {
+  type: "bar",
+  data:{
     labels: xValues,
     datasets: [{
       backgroundColor: barColors,
       data: yValues,
     }]
-  }
-  options= {
+  },
+  options:{
     legend: {display: false}
 
   }
-}
+
 
 
 });
