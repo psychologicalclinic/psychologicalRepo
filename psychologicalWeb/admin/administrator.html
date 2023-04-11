@@ -83,21 +83,21 @@
 
     <div class="contanier"> 
         <div class="row" id="card-body">
-            <div class="card col-3 m-5" style="width: 25rem;" >
+            <div class="card col-4 m-5" style="width: 25rem;" >
                 <div class="card-body" >
                   <h4 class="card-title">Weekly Appointment</h4>
                   <h5 class="card-subtitle mb-2 text-body-secondary fa-solid fa-person-rays">  100 </h5>
                  
                 </div>
               </div>
-              <div class="card col-3 m-5" style="width: 25rem;">
+              <div class="card col-4 m-5" style="width: 25rem;">
                 <div class="card-body">
                     <h4 class="card-title">Waiting Meeting</h4>
                     <h5 class="card-subtitle mb-2 text-body-secondary fa-solid fa-handshake-simple">  15 </h5>
                
                 </div>
               </div>
-              <div class="card  col-3 m-5" style="width: 25rem;">
+              <div class="card  col-4 m-5" style="width: 25rem;">
                 <div class="card-body">
                     <h4 class="card-title">Visitors <BR> Online</h4>
                     <h5 class="card-subtitle mb-2 text-body-secondary fa-solid fa-shoe-prints">  95,5741 </h5>
@@ -110,27 +110,83 @@
 <div class="contanier">
 <div class="row" id="text-center">
   <div class="col-6 m-6">
-    <h2>Bars Chart</h2>
+    <h2>Aylık Verilen Hizmet</h2>
     <div id="bar-chart" >
   <canvas class="text-center" id="myChart" ></canvas>
 </div>
-</div>
 
+<div class="row">
+  <div class="col-1 bg-info">
+    Lorem.
+  </div>
+  <div class="col-1 bg-success">
+    Lorem.
+  </div>
+  <div class="col-1 bg-danger">
+    Lorem.
+  </div>
+  <div class="col-1 bg-info">
+    Lorem.
+  </div>
+  <div class="col-1 bg-success">
+    Lorem.
+  </div>
+  <div class="col-1 bg-info">
+    Lorem.
+  </div>
+  <div class="col-1 bg-success">
+    Lorem.
+  </div>
+  <div class="col-1 bg-info">
+    Lorem.
+  </div>
+  <div class="col-1 bg-success">
+    Lorem.
+  </div>
+  <div class="col-1 bg-info">
+    Lorem.
+  </div>
+  <div class="col-1 bg-success">
+    Lorem.
+  </div>
+  <div class="col-1 bg-info">
+    Lorem.
+  </div>
+</div>
+</div>
+    
 
     <div class="col-6 m-6" >
-      <h2>Pie Chart</h2>
+      <h2>Toplam Verilen Hizmet</h2>
       <div id="pie-chart" >
     <canvas class="text-center" id="myChartt" ></canvas>
      </div>
   </div>
-         </div>
-         </div>
-  
+      
+
+</div>
+      
+</div>
+
+
+
+
+
     <script>
 
-  var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
-  var yValues = [55, 49, 44, 24, 35];
-  var barColors = ["pink", "purple","yellow","orange","brown"];
+var xValues = ["Online", "Bireysel", "Aile ve Çift", "Evlilik Öncesi", "Cinsel", "Boşanma", "EMDR", "Çocuk ve Ergen", "Oyun"];
+var yValues = [23, 15, 3, 0, 0,2,0,2,2 ];
+var barColors = [
+  "#BA68C8",
+  "#9575CD",
+  "#7986CB",
+  "#64B5F6",
+  "#4FC3F7",
+  "#4DD0E1",
+  "#81C784" ,
+  "#AED581",
+  "#DCE775",
+];
   
   new Chart("myChart", {
     type: "bar",
@@ -148,14 +204,18 @@
 
 
 
-  var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
-var yValues = [55, 49, 44, 24, 15];
+var xValues = ["Online", "Bireysel", "Aile ve Çift", "Evlilik Öncesi", "Cinsel", "Boşanma", "EMDR", "Çocuk ve Ergen", "Oyun"];
+var yValues = [120, 70, 30, 10, 8,5,15,19,15 ];
 var barColors = [
-  "#b91d47",
-  "#00aba9",
-  "#2b5797",
-  "#e8c3b9",
-  "#1e7145"
+  "#BA68C8",
+  "#9575CD",
+  "#7986CB",
+  "#64B5F6",
+  "#4FC3F7",
+  "#4DD0E1",
+  "#81C784" ,
+  "#AED581",
+  "#DCE775",
 ];
 
 new Chart("myChartt", {
@@ -164,13 +224,12 @@ new Chart("myChartt", {
     labels: xValues,
     datasets: [{
       backgroundColor: barColors,
-      data: yValues
+      data: yValues,
     }]
   },
   options: {
     title: {
       display: true,
-      text: "World Wide Wine Production 2018"
     }
   }
 });

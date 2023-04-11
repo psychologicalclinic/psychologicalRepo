@@ -7,7 +7,6 @@
 	font-family: Raleway, sans-serif;
 }
 
-
 .container-fluid{
     background-color: #51478e !important;
 }
@@ -111,8 +110,8 @@ a:hover {
 }
 
 .card {
-    --bs-card-border-color: #4b1f00ac !important;
-    --bs-card-bg: #f6924568 !important;
+    --bs-card-border-color: #505807 !important;
+    --bs-card-bg: #dce7759f !important;
     --bs-card-title-spacer-y: 3.5rem !important;
     --bs-card-border-width: 3px !important;
     --bs-card-spacer-y: 2rem !important;
@@ -135,16 +134,19 @@ h5 {
 }
 
 
-/* #text-center{
-    display: flex;
-    width:70%;
-    max-width:600px;
-} */
 #bar-chart{
     width: 70%;
-    margin-left: 30px !important;
+    margin-left: 80px !important;
 }
 #pie-chart{
-    width: 50%;
+    width: 40%;
     margin-left: 80px !important;
+}
+h2{
+    margin-left: 80px;
+    color:#332c60 ;
+    text-align: center;
+}
+.col-1{
+    display: block !important;
 }
