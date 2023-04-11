@@ -148,5 +148,5 @@ h2{
     text-align: center;
 }
 .col-1{
-    display: block !important;
+    display: inline-block !important;
 }

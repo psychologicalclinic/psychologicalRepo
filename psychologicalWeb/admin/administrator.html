@@ -114,47 +114,46 @@
     <div id="bar-chart" >
   <canvas class="text-center" id="myChart" ></canvas>
 </div>
-
-<div class="row">
-  <div class="col-1 bg-info">
-    Lorem.
+ <br><br>
+<div class="row" >
+  <div class="col-1 bg-info" onclick="cads(1)">
+    Ocak
   </div>
-  <div class="col-1 bg-success">
-    Lorem.
+  <div class="col-1 bg-success" onclick="cads(2)">
+    Şubat
   </div>
-  <div class="col-1 bg-danger">
-    Lorem.
+  <div class="col-1 bg-danger" onclick="cads(3)">
+    Mart
   </div>
-  <div class="col-1 bg-info">
-    Lorem.
+  <div class="col-1 bg-info" onclick="cads(4)">
+    Nisan
   </div>
-  <div class="col-1 bg-success">
-    Lorem.
+  <div class="col-1 bg-success" onclick="cads(5)">
+    Mayıs
   </div>
-  <div class="col-1 bg-info">
-    Lorem.
+  <div class="col-1 bg-info" onclick="cads(6)">
+    Haziran
   </div>
-  <div class="col-1 bg-success">
-    Lorem.
+  <div class="col-1 bg-success" onclick="cads(7)">
+    Temmuz
   </div>
-  <div class="col-1 bg-info">
-    Lorem.
+  <div class="col-1 bg-info" onclick="cads(8)">
+    Ağustos
   </div>
-  <div class="col-1 bg-success">
-    Lorem.
+  <div class="col-1 bg-success" onclick="cads(9)">
+    Eylül
   </div>
-  <div class="col-1 bg-info">
-    Lorem.
+  <div class="col-1 bg-info" onclick="cads(10)">
+    Ekim
   </div>
-  <div class="col-1 bg-success">
-    Lorem.
+  <div class="col-1 bg-success" onclick="cads(11)">
+    Kasım
   </div>
-  <div class="col-1 bg-info">
-    Lorem.
+  <div class="col-1 bg-info" onclick="cads(12)">
+    Aralık
   </div>
 </div>
 </div>
-    
 
     <div class="col-6 m-6" >
       <h2>Toplam Verilen Hizmet</h2>
@@ -162,20 +161,18 @@
     <canvas class="text-center" id="myChartt" ></canvas>
      </div>
   </div>
-      
-
+ </div>  
 </div>
-      
-</div>
-
-
-
-
-
     <script>
 
+
+var DateNow = new Date();
+var month =DateNow.getMonth()+1;
+function Ay(){
+  alert (month);
+}
 var xValues = ["Online", "Bireysel", "Aile ve Çift", "Evlilik Öncesi", "Cinsel", "Boşanma", "EMDR", "Çocuk ve Ergen", "Oyun"];
-var yValues = [23, 15, 3, 0, 0,2,0,2,2 ];
+
 var barColors = [
   "#BA68C8",
   "#9575CD",
@@ -187,22 +184,64 @@ var barColors = [
   "#AED581",
   "#DCE775",
 ];
-  
-  new Chart("myChart", {
-    type: "bar",
-    data: {
-      labels: xValues,
-      datasets: [{
-        backgroundColor: barColors,
-        data: yValues
-      }]
-    },
-    options: {
-      legend: {display: false},
-    }
-  });
+new Chart("myChart",
 
 
+function cads(id){
+  if(id==1) {
+    var yValues = [23, 15, 3, 0, 0,2,0,2,2 ];
+  }
+  if(id==2) {
+    var yValues = [40, 35, 25, 10, 20,2,0,2,2 ];
+  }
+  if(id==3) {
+    var yValues = [10, 15, 25, 35, 45,50,55,45,20 ];
+  }
+  if(id==4) {
+    var yValues = [25, 35, 15, 10, 12,20,15,14,20 ];
+  }
+  if(id==5) {
+    var yValues = [4, 3, 2, 1, 2,2,5,2,2 ];
+  }
+  if(id==6) {
+    var yValues = [40, 35, 25, 10, 20,2,0,2,2 ];
+  }
+  if(id==7) {
+    var yValues = [0, 15, 25, 30, 10,20,30,10,10 ];
+  }
+  if(id==8) {
+    var yValues = [40, 35, 25, 10, 20,2,0,2,2 ];
+  }
+  if(id==9) {
+    var yValues =  [4, 3, 15, 10, 15,2,0,2,2 ];
+  }
+  if(id==10) {
+    var yValues = [20, 15, 5, 10, 20,20,40,32,22 ];
+  }
+  if(id==11) {
+    var yValues = [23, 15, 3, 0, 0,2,0,2,2 ];
+  }
+  if(id==12) {
+    var yValues = [10, 15, 25, 50, 20,20,35,35,20 ];
+  }
+
+  {
+  type= "bar",
+  data= {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues,
+    }]
+  }
+  options= {
+    legend: {display: false}
+
+  }
+}
+
+
+});
 
 var xValues = ["Online", "Bireysel", "Aile ve Çift", "Evlilik Öncesi", "Cinsel", "Boşanma", "EMDR", "Çocuk ve Ergen", "Oyun"];
 var yValues = [120, 70, 30, 10, 8,5,15,19,15 ];
