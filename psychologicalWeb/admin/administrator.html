@@ -117,40 +117,40 @@
 </div>
  <br><br>
 <div class="row" >
-  <div class="col-1 bg-info" onclick="cads(1)">
+  <div class="col-1 bg-info" onclick="getMonth(1)">
     Ocak
   </div>
-  <div class="col-1 bg-success" onclick="cads(2)">
+  <div class="col-1 bg-success" onclick="getMonth(2)">
     Şubat
   </div>
-  <div class="col-1 bg-danger" onclick="cads(3)">
+  <div class="col-1 bg-danger" onclick="getMonth(3)">
     Mart
   </div>
-  <div class="col-1 bg-info" onclick="cads(4)">
+  <div class="col-1 bg-info" onclick="getMonth(4)">
     Nisan
   </div>
-  <div class="col-1 bg-success" onclick="cads(5)">
+  <div class="col-1 bg-success" onclick="getMonth(5)">
     Mayıs
   </div>
-  <div class="col-1 bg-info" onclick="cads(6)">
+  <div class="col-1 bg-info" onclick="getMonth(6)">
     Haziran
   </div>
-  <div class="col-1 bg-success" onclick="cads(7)">
+  <div class="col-1 bg-success" onclick="getMonth(7)">
     Temmuz
   </div>
-  <div class="col-1 bg-info" onclick="cads(8)">
+  <div class="col-1 bg-info" onclick="getMonth(8)">
     Ağustos
   </div>
-  <div class="col-1 bg-success" onclick="cads(9)">
+  <div class="col-1 bg-success" onclick="getMonth(9)">
     Eylül
   </div>
-  <div class="col-1 bg-info" onclick="cads(10)">
+  <div class="col-1 bg-info" onclick="getMonth(10)">
     Ekim
   </div>
-  <div class="col-1 bg-success" onclick="cads(11)">
+  <div class="col-1 bg-success" onclick="getMonth(11)">
     Kasım
   </div>
-  <div class="col-1 bg-info" onclick="cads(12)">
+  <div class="col-1 bg-info" onclick="getMonth(12)">
     Aralık
   </div>
 </div>
@@ -167,11 +167,7 @@
     <script>
 
 
-var DateNow = new Date();
-var month =DateNow.getMonth()+1;
-function Ay(){
-  alert (month);
-}
+
 var xValues = ["Online", "Bireysel", "Aile ve Çift", "Evlilik Öncesi", "Cinsel", "Boşanma", "EMDR", "Çocuk ve Ergen", "Oyun"];
 
 var barColors = [
@@ -187,7 +183,7 @@ var barColors = [
 ];
 
 
-function cads(id){
+function getMonth(id){
   if(id==1) {
     var yValues = [23, 15, 3, 0, 0,2,0,2,2 ];
   }
@@ -224,7 +220,10 @@ function cads(id){
   if(id==12) {
     var yValues = [10, 15, 25, 50, 20,20,35,35,20 ];
   }
-}
+
+
+
+
 
 new Chart("myChart",
   {
@@ -234,16 +233,17 @@ new Chart("myChart",
     datasets: [{
       backgroundColor: barColors,
       data: yValues,
+      
     }]
-  },
-  options:{
-    legend: {display: false}
-
   }
 
-
-
 });
+window.onload = function ay(){
+var DateNow = new Date();
+var month =DateNow.getMonth()+1;
+alert(month)
+}
+}
 
 var xValues = ["Online", "Bireysel", "Aile ve Çift", "Evlilik Öncesi", "Cinsel", "Boşanma", "EMDR", "Çocuk ve Ergen", "Oyun"];
 var yValues = [120, 70, 30, 10, 8,5,15,19,15 ];
