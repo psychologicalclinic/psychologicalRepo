@@ -149,4 +149,9 @@ h2{
 }
 .col-1{
     display: inline-block !important;
+    background-image: 
+    linear-gradient(to right, #BA68C8,#9575CD,#7986CB,#64B5F6,#4DD0E1,#81C784,#AED581,#DCE775 ); 
+    margin-left: 80px;
+    color:#332c60 ;
+    border-bottom: 2px solid #332c60;
 }

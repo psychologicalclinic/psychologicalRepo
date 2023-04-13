@@ -43,17 +43,19 @@
                   document.getElementById("YanMenu").style.width = "250px";
                   document.getElementById("main").style.marginLeft = "250px";
                   document.getElementById("card-body").style.marginLeft = "250px";
+                  document.getElementById("text-center").style.marginLeft = "250px";
                 }
                 function closeNav() {
                   document.getElementById("YanMenu").style.width = "0";
                   document.getElementById("main").style.marginLeft= "0";
                   document.getElementById("card-body").style.marginLeft= "0";
+                  document.getElementById("text-center").style.marginLeft= "0";
                 }
                 </script>
                    
                   </div>
 
-        <div class="input-group-text col-6 ">
+        <div class="input-group-text col-4 ">
             <span class="input-group-text fa-solid fa-magnifying-glass" id="input"></span>
             <input type="text" class="form-control"  >
             
@@ -70,11 +72,11 @@
             </ul>
           </div>
           
-        <div class="btn col-1 "> 
+        <div class="btn col-2 "> 
            <span id="icon" class="fa-solid fa-bell"> </span> 
 
         </div>
-        <div class="btn col-1 "> 
+        <div class="btn col-2 "> 
             <span id="icon" class="fa-solid fa-list-check"></span> 
         </div>
     </div>
@@ -117,40 +119,40 @@
 </div>
  <br><br>
 <div class="row" >
-  <div class="col-1 bg-info" onclick="getMonth(1)">
+  <div class="col-1 " onclick="getMonth(1)">
     Ocak
   </div>
-  <div class="col-1 bg-success" onclick="getMonth(2)">
+  <div class="col-1 " onclick="getMonth(2)">
     Şubat
   </div>
-  <div class="col-1 bg-danger" onclick="getMonth(3)">
+  <div class="col-1 " onclick="getMonth(3)">
     Mart
   </div>
-  <div class="col-1 bg-info" onclick="getMonth(4)">
+  <div class="col-1" onclick="getMonth(4)">
     Nisan
   </div>
-  <div class="col-1 bg-success" onclick="getMonth(5)">
+  <div class="col-1 " onclick="getMonth(5)">
     Mayıs
   </div>
-  <div class="col-1 bg-info" onclick="getMonth(6)">
+  <div class="col-1 " onclick="getMonth(6)">
     Haziran
   </div>
-  <div class="col-1 bg-success" onclick="getMonth(7)">
+  <div class="col-1 " onclick="getMonth(7)">
     Temmuz
   </div>
-  <div class="col-1 bg-info" onclick="getMonth(8)">
+  <div class="col-1 " onclick="getMonth(8)">
     Ağustos
   </div>
-  <div class="col-1 bg-success" onclick="getMonth(9)">
+  <div class="col-1 " onclick="getMonth(9)">
     Eylül
   </div>
-  <div class="col-1 bg-info" onclick="getMonth(10)">
+  <div class="col-1" onclick="getMonth(10)">
     Ekim
   </div>
-  <div class="col-1 bg-success" onclick="getMonth(11)">
+  <div class="col-1 " onclick="getMonth(11)">
     Kasım
   </div>
-  <div class="col-1 bg-info" onclick="getMonth(12)">
+  <div class="col-1 " onclick="getMonth(12)">
     Aralık
   </div>
 </div>
@@ -165,6 +167,12 @@
  </div>  
 </div>
     <script>
+
+window.onload = function ay(){
+var DateNow = new Date();
+var month =DateNow.getMonth()+1;
+getMonth(month);
+}
 
 
 
@@ -238,11 +246,6 @@ new Chart("myChart",
   }
 
 });
-window.onload = function ay(){
-var DateNow = new Date();
-var month =DateNow.getMonth()+1;
-alert(month)
-}
 }
 
 var xValues = ["Online", "Bireysel", "Aile ve Çift", "Evlilik Öncesi", "Cinsel", "Boşanma", "EMDR", "Çocuk ve Ergen", "Oyun"];
@@ -275,9 +278,37 @@ new Chart("myChartt", {
   }
 });
   </script>
+ <br><br><br><br>
 
-
-
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
 
 
 
