@@ -278,44 +278,194 @@ new Chart("myChartt", {
   }
 });
   </script>
- <br><br><br><br>
 
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Tarih</th>
+      <th scope="col">Saat</th>
+      <th scope="col">Danışanlar</th>
+      <th scope="col">Konu</th>
+      <th scope="col">Durum</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <th scope="row">02.04.2023</th>
+      <td>12:30</td>
+      <td><button id="modall" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Şeyma Baltacı</td></button>
+      <td>Bireysel Terapi</td>
+      <td type="button" class="btn" id="devam">Devam Ediyor.</td>
     </tr>
     <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
+      <th scope="row">13.04.2023</th>
+      <td>16:30</td>
+      <td><button id="modall" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Bilal Kaplan</td></button>
+      <td>Online Terapi</td>
+      <td type="button" class="btn" id="tamamlandı">Tamamlandı.</td>
     </tr>
     <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
+      <th scope="row">14.04.2023</th>
+      <td>13:30</td>
+      <td><button id="modall" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Harun Çakmakoğlu</td></button>
+      <td>Online Terapi</td>
+      <td type="button" class="btn" id="beklemede">Beklemede</td>
+    </tr>
+    <tr>
+      <th scope="row">17.04.2023</th>
+      <td>13:00</td>
+      <td> <button id="modall" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Şeyma Baltacı</td></button>
+      <td>Bireysel Terapi</td>
+      <td type="button" class="btn"  id="iptal">İptal Edilmiş</td>
+    </tr>
+    <tr>
+      <th scope="row">19.04.2023</th>
+      <td>14:00</td>
+      <td><button id="modall" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      Buse Gül</td> </button>
+      <td>Oyun Terapisi</td>
+      <td type="button" class="btn" id="beklemede">Beklemede</td>
     </tr>
   </tbody>
 </table>
 
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Tarih</th>
+      <th scope="col">Saat</th>
+      <th scope="col">Danışanlar</th>
+      <th scope="col">Konu</th>
+      <th scope="col">Durum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">03.03.2023</th>
+      <td>12:30</td>
+      <td>Şeyma Baltacı</td>
+      <td>Bireysel Terapi</td>
+      <td type="button" class="btn" id="tamamlandı">Tamamlandı.</td>
+    </tr>
+    <tr>
+      <th scope="row">18.03.2023</th>
+      <td>16:30</td>
+      <td>Şeyma Baltacı</td>
+      <td>Online Terapi</td>
+      <td type="button" class="btn" id="tamamlandı">Tamamlandı.</td>
+    </tr>
+    <tr>
+      <th scope="row">02.04.2023</th>
+      <td>12:30</td>
+      <td>Şeyma Baltacı</td>
+      <td>Online Terapi</td>
+      <td type="button" class="btn" id="beklemede">Beklemede</td>
+    </tr>
+    <tr>
+      <th scope="row">17.04.2023</th>
+      <td>13:00</td>
+      <td>Şeyma Baltacı</td>
+      <td>Bireysel Terapi</td>
+      <td type="button" class="btn"  id="iptal">İptal Edilmiş.</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
 
+<div id="myDIV" class="header">
+  <h2 style="margin:5px">My To Do List</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
 
+<ul id="myUL">
+  <li>Hit the gym</li>
+  <li class="checked">Pay bills</li>
+  <li>Meet George</li>
+  <li>Buy eggs</li>
+  <li>Read a book</li>
+  <li>Organize office</li>
+</ul>
 
+<script>
+// Create a "close" button and append it to each list item
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+</script>
 
     
    
