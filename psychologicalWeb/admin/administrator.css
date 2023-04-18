@@ -143,7 +143,7 @@ h5 {
     margin-left: 80px !important;
 }
 h2{
-    margin-left: 80px;
+    margin-left: -30px;
     color:#332c60 ;
     text-align: center;
 }
@@ -155,10 +155,12 @@ h2{
     color:#332c60 ;
     border-bottom: 2px solid #332c60;
 }
+/*------------------ TABLE-------------------- */
 .table{
     margin-top: 10rem !important;
 }
 #modall{
+    
     --bs-btn-color: #f3f4f6 !important;
     --bs-btn-bg: #51478e !important;
     --bs-btn-hover-color: #ffffff !important;
@@ -195,79 +197,93 @@ h2{
     linear-gradient(to right, #710202,#cc0303,#f04e4e ); 
     color: #332c60;}
 
-    
-    #newtask{
-        position: relative;
-        padding: 30px 20px;
+    /*---------------------- TO DO LİST----------------------------------- */
+
+
+    #todolist{
+        
+        margin: 200px 20px 100px 100px;
     }
-    #newtask input{
-        width: 75%;
-        height: 45px;
-        padding: 12px;
-        color: #111111;
-        font-weight: 500;
-        position: relative;
-        border-radius: 5px;
-        font-family: 'Poppins',sans-serif;
-        font-size: 15px;
-        border: 2px solid #d1d3d4;
-    }
-    
-    #newtask input:focus{
-        outline: none;
-        border-color: #7b6dd6;
-    }
-    #newtask button{
-        position: relative;
-        float: right;
-        font-weight: 500;
-        font-size: 16px;
-        background-color: #7b6dd6;
-        border: none;
-        color: #ffffff;
-        cursor: pointer;
-        outline: none;
-        width: 20%;
-        height: 45px;
-        border-radius: 5px;
-        font-family: 'Poppins',sans-serif;
-    }
-    #tasks{
-        border-radius: 10px;
-        width: 100%;
-        position: relative;
-        background-color: #7b6dd6;
-        padding: 30px 20px;
-        margin-top: 10px;
-    }
-    
-    .task{
-        border-radius: 5px;
+    .form {
+        background-color: #eee;
+        border-radius: 6px;
+        /* padding: 20px; */
         align-items: center;
-        justify-content: space-between;
-        border: 1px solid #939697;
-        cursor: pointer;
-        background-color: #fbfbfb;
-        height: 50px;
-        margin-bottom: 8px;
-        padding: 5px 10px;
-        display: flex;
+      
     }
-    .task:checked{
-        text-decoration: line-through;
+    .form h2{
+        text-align: center;
     }
-    .task span{
-        font-family: 'Poppins',sans-serif;
-        font-size: 15px;
-        font-weight: 400;
+    .input {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        flex: 1;
+        width: 85%;
     }
-    .task button{
-        background-color: #31286c;
-        color: #ffffff;
-        border: none;
-        cursor: pointer;
+    .input:focus , .add:focus{
         outline: none;
-        height: 100%;
-        width: 40px;
-        border-radius: 5px;
+    }
+    .add {
+        border: none;
+        background-color: #7b6dd6;
+        color: white;
+        padding: 10px;
+        border-radius: 6px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    .tasks {
+        background-color: #eee;
+        margin-top: 20px;
+        border-radius: 6px;
+        padding: 20px;
+    }
+    .tasks .task {
+        background-color: white;
+        padding: 10px;
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.3s;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        color: #332c60;
+    }
+    .tasks .task:not(:last-child) {
+        margin-bottom: 15px;
+    }
+    .tasks .task:hover {
+        background-color: #dad4ff;
+    }
+    .tasks .task.done {
+        opacity: 0.5;
+        position: relative;
+    }
+    .task.done::after {
+        position: absolute;
+        content: "";
+    }
+    .tasks .task span { 
+        font-weight: bold;
+        font-size: 10px;
+        background-color: #7b6dd6;
+        color: white;
+        padding: 2px 6px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .modal-footer {
+        background-color:#fff !important;
+        border-radius: 8px !important;
+    }
+    .modal{
+        --bs-modal-width: 600px !important;
+    }
+    .modal-body{
+        padding-left: 0px !important;
+    }
+    h1{
+        color: #332c60;
     }
