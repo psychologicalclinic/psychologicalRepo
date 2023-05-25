@@ -139,3 +139,9 @@
     color: rgb(255, 255, 255);
     background-color: #9CCC65;
   }
+
+  #yorum{
+    width: 20% !important;
+    margin-left: 18px !important;
+    
+  }

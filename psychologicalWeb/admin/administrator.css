@@ -287,3 +287,27 @@ h2{
     h1{
         color: #332c60;
     }
+    /* ////////////////////Yorum Yönetimi///////////////////////////////// */
+    #onaylı{
+        color: #5fb522 !important;
+    }
+    #ret{
+        color: #ba0b0b !important;
+    }
+    #bekleyen{
+        color: #f5b70c !important;
+    }
+    .ucnokta {
+        white-space: nowrap; /* Yazıyı tek satırla sınırlandırıyoruz */
+        overflow: hidden;
+        text-overflow: ellipsis; /* Yazının kesildiği yerden üç nokta vermesini sağlıyoruz*/
+        width:46%;
+    }
+    #detay{
+        border: none;
+         background-color: #fff;
+    }
+    #id{
+        width: 50% !important;
+    }
+ 
